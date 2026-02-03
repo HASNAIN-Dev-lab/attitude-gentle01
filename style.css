@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #111;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 50px;
+  background: rgba(255,255,255,0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  border-bottom: 1px solid #eee;
+}
+
+.logo-area img {
+  height: 45px;
+}
+
+nav a {
+  color: #111;
+  margin-left: 25px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  opacity: 0.6;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-logo {
+  width: 220px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.btn {
+  padding: 12px 32px;
+  border: 1px solid #111;
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #111;
+  color: #fff;
+}
+
+/* SECTIONS */
+.section {
+  padding: 120px 60px;
+  text-align: center;
+}
+
+.section.light {
+  background: #f8f8f8;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  padding: 40px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* GALLERY */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* REVIEWS */
+.review-box {
+  max-width: 600px;
+  margin: 20px auto;
+  font-style: italic;
+}
+
+/* FOOTER */
+footer {
+  padding: 40px;
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+footer img {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+/* WHATSAPP */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25D366;
+  color: #fff;
+  font-size: 26px;
+  padding: 16px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+/* ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.9s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
